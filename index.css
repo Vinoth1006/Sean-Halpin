@@ -185,7 +185,7 @@
     left: 50px;
     top: 30px;
     border-radius: 60%;
-    background-image: url(https://web.archive.org/web/20181116235605im_/http://seanhalpin.io/assets/img/content/home/what-i-do/design-icons-vert.png);
+    background-image: url(./images/design-icons-vert.png);
 }
 
 .design .design-what-you-want {
@@ -257,7 +257,7 @@
     left: 30px;
     top: 110px;
     border-radius: 60%;
-    background-image: url(https://web.archive.org/web/20181117031816im_/http://seanhalpin.io/assets/img/content/home/what-i-do/dev-icons-vert.png);
+    background-image: url(./images/dev-icons-vert.png);
 }
 
 .develop .develop-what img {
