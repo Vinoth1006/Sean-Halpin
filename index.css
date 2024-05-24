@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.header {
+    background-color: #E0EBE8;
+    height: 7.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    transition: top 0.3s ease-in-out;
+}
+
+/* .header-fixed {
+    position: fixed;
+    box-shadow: 0 1px 1px rgba(6, 8, 8, .1);
+    opacity: .97;
+    transition: all .8s;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    background: #fff;
+    top: 0;
+} */
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.hide {
+    top: -120px;
+    /* Adjust this value to hide the header completely */
+}
+
+.header .header-logo img {
+    height: 72px;
+    width: 72px;
+}
+
+.header .navigator ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-top: 50px; */
+    list-style: none;
+    margin-left: 8.5rem;
+}
+
+.navigator a {
+    text-decoration: none;
+    color: #45b29a;
+    margin-right: 37px;
+    font-size: 1.313rem;
+    font-weight: 400;
+
+}
+
+.title {
+    background-color: #E0EBE8;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.title-container {
+    height: fit-content;
+    width: 65%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding: 50px;
+    margin-top: 3.5rem;
+}
+
+.title-para {
+    color: #45b29a;
+    margin-top: 30px;
+    font-size: 1.3em;
+}
+
+.left-cloud {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.right-cloud {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navigator .active {
+    color: #21564b;
+
+}
+
+.land-img {
+    background-color: #E0EBE8;
+    display: flex;
+    justify-content: center;
+}
+
+.land-img img {
+    margin: 3rem 0 0 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    /* flex-direction: row; */
+    /* align-self: center; */
+}
+
+.intro img {
+    width: 9.375rem;
+    height: 9.375rem;
+}
+
+.msg h3 {
+    margin-top: 2rem;
+    text-align: center;
+    color: #45b29a;
+}
+
+.intro-para {
+    margin-top: 1.8rem;
+    text-align: center;
+    line-height: 1.9rem;
+    font-size: 1.1rem;
+    font-family: adobe-garamond-pro, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+.what-i-can-do h2 {
+    text-align: center;
+    color: #1e836c;
+    font-size: 3.3rem;
+    font-weight: 400;
+    margin-top: 10rem;
+}
+
+.design-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+}
+
+.design {
+    display: flex;
+}
+
+.design-what img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 300px;
+}
+
+.design .bubble-center .bubbling-design-icon-vert {
+    animation-name: bubblinger-vert-down;
+    width: 77px;
+    height: 77px;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    position: relative;
+    left: 50px;
+    top: 30px;
+    border-radius: 60%;
+    background-image: url(https://web.archive.org/web/20181116235605im_/http://seanhalpin.io/assets/img/content/home/what-i-do/design-icons-vert.png);
+}
+
+.design .design-what-you-want {
+    position: relative;
+    left: 110px;
+    top: 10px;
+
+}
+
+.design .design-what-you-want h3 {
+    color: #45b29a;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 2rem;
+}
+
+.design .design-what-you-want p {
+    margin: 20px 0 0 0;
+    font-family: adobe-garamond-pro, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    /* color: #545454; */
+}
+
+.develop-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+}
+
+.develop {
+    display: flex;
+}
+
+.develop .develop-what-you-need {
+    position: relative;
+    top: 70px;
+    right: 65px;
+}
+
+.develop .develop-what-you-need h3 {
+    color: #45b29a;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 2rem;
+}
+
+.develop .develop-what-you-need p {
+    margin: 20px 0 0 0;
+    font-family: adobe-garamond-pro, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.develop .bubble-center .bubbling-develop-icon-vert {
+    animation-name: bubblinger-vert-down;
+    width: 77px;
+    height: 77px;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    position: relative;
+    left: 30px;
+    top: 110px;
+    border-radius: 60%;
+    background-image: url(https://web.archive.org/web/20181117031816im_/http://seanhalpin.io/assets/img/content/home/what-i-do/dev-icons-vert.png);
+}
+
+.develop .develop-what img {
+    height: 155px;
+    width: 180px;
+    animation-name: bubblinger-vert-down;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    position: relative;
+    left: 70px;
+    top: 60px;
+}
+
+.help {
+    margin-top: 12rem;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+
+.help h2 {
+    text-align: center;
+    color: #1e836c;
+    font-size: 3.3rem;
+    font-weight: 400;
+}
+
+.help h3 {
+    color: #45b29a;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 1.1rem;
+    margin-top: 3.3rem;
+    font-size: 1.5rem;
+}
+
+.help p {
+    font-family: adobe-garamond-pro, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 2.9rem;
+
+}
+
+.help-btn button {
+    font-size: 1rem;
+    padding-top: 10px;
+    background-color: #45b29a;
+    color: black;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 2.5px;
+    margin-top: 2.5rem;
+    text-align: center;
+    filter: blur(70%);
+}
+
+.help-btn:hover button {
+    background: #3ea08a;
+}
+
+.help-btn button i {
+    font-size: 1rem;
+    margin-right: 10px;
+    line-height: 1rem;
+}
+
+.footer-div {
+    width: 100%;
+    height: 180px;
+    background-color: #c5ded7;
+    position: relative;
+    top: 12rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div .footer a {
+    position: relative;
+    top: 60px;
+    margin-right: 6rem;
+    text-decoration: none;
+    color: #45b29a;
+    font-size: 1.1rem;
+}
+
+.footer-div p {
+    margin-top: 100px;
+    text-align: center;
+    color: #45b29a;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+@keyframes bubblinger-vert-down {
+    0% {
+        background-position: 0 0;
+    }
+
+    5% {
+        background-position: 0 77px;
+    }
+
+    35% {
+        background-position: 0 77px;
+    }
+
+    40% {
+        background-position: 0 154px;
+    }
+
+    68% {
+        background-position: 0 154px;
+    }
+
+    73% {
+        background-position: 0 231px;
+    }
+
+    100% {
+        background-position: 0 231px;
+    }
+}
